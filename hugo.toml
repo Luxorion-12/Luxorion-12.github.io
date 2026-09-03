@@ -1,0 +1,106 @@
+baseURL = 'https://luxorion-12.github.io/'
+title = 'Luxorion'
+theme = ['PaperMod']
+
+# Default language is served at /, with English at /en/.
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = 'tags'
+
+[params]
+  env = 'production'
+  description = 'AI / 计算机方向学生的个人网站：技术博客、项目作品集与个人主页。'
+  author = 'Luxorion'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  disableLangToggle = false
+  displayFullLangName = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  mainSections = ['posts']
+
+  [params.label]
+    text = 'Luxorion'
+
+  [[params.socialIcons]]
+    name = 'github'
+    title = 'GitHub: Luxorion-12'
+    url = 'https://github.com/Luxorion-12'
+
+[languages]
+  [languages.zh]
+    contentDir = 'content/zh'
+    direction = 'ltr'
+    label = '中文'
+    locale = 'zh-CN'
+    title = 'Luxorion | AI / 计算机方向学生'
+    weight = 1
+    [languages.zh.params]
+      languageAltTitle = '切换至中文'
+      [languages.zh.params.profileMode]
+        enabled = true
+        title = 'Luxorion'
+        subtitle = '人工智能方向本科生，关注 AI Infra 与 AI Systems。'
+        [[languages.zh.params.profileMode.buttons]]
+          name = '关于我'
+          url = 'about'
+    [languages.zh.menus]
+      [[languages.zh.menus.main]]
+        name = '首页'
+        pageRef = '/'
+        weight = 10
+      [[languages.zh.menus.main]]
+        name = '关于'
+        pageRef = '/about'
+        weight = 20
+      [[languages.zh.menus.main]]
+        name = '经历'
+        pageRef = '/experience'
+        weight = 30
+      [[languages.zh.menus.main]]
+        name = '联系'
+        pageRef = '/contact'
+        weight = 40
+
+  [languages.en]
+    contentDir = 'content/en'
+    direction = 'ltr'
+    label = 'English'
+    locale = 'en-US'
+    title = 'Luxorion | AI & Computer Science Student'
+    weight = 2
+    [languages.en.params]
+      languageAltTitle = 'Switch to English'
+      [languages.en.params.profileMode]
+        enabled = true
+        title = 'Luxorion'
+        subtitle = 'An AI student exploring AI infrastructure and AI systems.'
+        [[languages.en.params.profileMode.buttons]]
+          name = 'About'
+          url = 'about'
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
+      [[languages.en.menus.main]]
+        name = 'About'
+        pageRef = '/about'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Experience'
+        pageRef = '/experience'
+        weight = 30
+      [[languages.en.menus.main]]
+        name = 'Contact'
+        pageRef = '/contact'
+        weight = 40
